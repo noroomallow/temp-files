@@ -1,7 +1,7 @@
 import socket
 import subprocess
 
-SERVER_IP = "10.70.91.189"   # Change this to the server PC's IP
+SERVER_IP = "10.70.91.189"
 SERVER_PORT = 5000
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -39,7 +39,6 @@ while True:
         break
 
     if command not in COMMANDS:
-
         message = (
             "Command not allowed.\n"
             "Available commands: "
@@ -83,4 +82,5 @@ while True:
 
 
 client.close()
+
 print("Client stopped.")
